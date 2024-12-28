@@ -1,5 +1,14 @@
-import React from 'react'
-import { Box, Flex, Text, Image, VStack, Icon, Link, HStack } from "@chakra-ui/react";
+import React from "react";
+import {
+  Box,
+  Flex,
+  Text,
+  Image,
+  VStack,
+  Icon,
+  Link,
+  HStack,
+} from "@chakra-ui/react";
 import { FaInstagram, FaYoutube, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
@@ -31,38 +40,72 @@ const Footer = () => {
           <Text fontSize="lg" fontWeight="bold">
             Explore
           </Text>
-          <HStack p={6}>
-            <Link href="#home" _hover={{ textDecoration: "none", color: "gray.300" }}>Home</Link>
-            <Link href="#who-we-are" _hover={{ textDecoration: "none", color: "gray.300" }}>Who We Are</Link>
-            <Link href="#what-we-do" _hover={{ textDecoration: "none", color: "gray.300" }}>What We Do</Link>
-            <Link href="#team" _hover={{ textDecoration: "none", color: "gray.300" }}>Team</Link>
-            <Link href="#career" _hover={{ textDecoration: "none", color: "gray.300" }}>Career</Link>
-            <Link href="#contact" _hover={{ textDecoration: "none", color: "gray.300" }}>Contact</Link>
+          <HStack p={6} color={"white"}>
+            <Link
+              href="#home"
+              _hover={{ textDecoration: "none", color: "white" }}
+            >
+              Home
+            </Link>
+            <Link
+              href="#about"
+              _hover={{ textDecoration: "none", color: "gray.300" }}
+            >
+              About
+            </Link>
+            <Link
+              href="#what-we-do"
+              _hover={{ textDecoration: "none", color: "gray.300" }}
+            >
+              What We Do
+            </Link>
+            <Link
+              href="#team"
+              _hover={{ textDecoration: "none", color: "gray.300" }}
+            >
+              Team
+            </Link>
+            <Link
+              href="#career"
+              _hover={{ textDecoration: "none", color: "gray.300" }}
+            >
+              Career
+            </Link>
+            <Link
+              href="#contact"
+              _hover={{ textDecoration: "none", color: "gray.300" }}
+            >
+              Contact
+            </Link>
           </HStack>
         </VStack>
 
         {/* Right: Social Media Links */}
         <HStack p={4}>
-          <Link href="https://instagram.com" >
-            <Icon boxSize={6} color={'white'}>
-                <FaInstagram/>
+          <Link href="https://www.instagram.com/jrm__construction?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <Icon boxSize={6} color={"white"}>
+              <FaInstagram />
             </Icon>
           </Link>
-          {/* <Link href="https://youtube.com" >
-            <Icon as={FaYoutube} boxSize={6} />
+          <Link href="https://youtube.com/@jrmconstruction?si=F_b-KsuQhfhDZNHL">
+            <Icon boxSize={6} color={"white"}>
+              <FaYoutube />
+            </Icon>
           </Link>
-          <Link href="https://linkedin.com" >
-            <Icon as={FaLinkedin} boxSize={6} />
+          <Link href="https://www.linkedin.com/company/jrmconstruction/?trk=ppro_cprof&originalSubdomain=in">
+            <Icon boxSize={6} color={"white"}>
+              <FaLinkedin />
+            </Icon>
           </Link>
-          <Link href="https://whatsapp.com" >
-            <Icon as={FaWhatsapp} boxSize={6} />
-          </Link> */}
+          <Link href="https://whatsapp.com">
+            <Icon boxSize={6} color={"white"}>
+              <FaWhatsapp />
+            </Icon>
+          </Link>
         </HStack>
       </Flex>
     </Box>
   );
 };
 
-
-
-export default Footer
+export default Footer;
