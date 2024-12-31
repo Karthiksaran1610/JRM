@@ -16,7 +16,6 @@ const Team = () => {
         mb="30px"
       />
 
-      {/* Team Members */}
       <Box textAlign={{ base: "center", md: "left" }} m="20px">
         <Flex direction={{ base: "column", md: "row" }} align="center" gap={8}>
           {/* Member 1 */}
@@ -36,7 +35,7 @@ const Team = () => {
             <Text fontSize="sm" color="gray.500" mb={4}>
               Founder
             </Text>
-            <Text fontSize="md">
+            <Text fontSize="md" mr={200}>
               Rebecca Malsawmi J is a distinguished construction professional
               and pioneering woman entrepreneur in the construction-tech sector,
               with over 14 years of experience. As the founder of JRM
@@ -49,33 +48,35 @@ const Team = () => {
       </Box>
 
       {/* Member 2 */}
-      <Flex direction={{ base: "column", md: "row" }} align="center" gap={8}>
-        <Box textAlign={{ base: "center", md: "left" }} m="20px">
-          <Heading as="h2" size="lg" ml="10px">
-            Manikandan
-          </Heading>
-          <Text fontSize="sm" color="gray.500" mb={4} ml="10px">
-            General Manager
-          </Text>
-          <Text fontSize="md" ml="10px">
-            Manikandan is the General Manager of JRM Construction. With
-            extensive experience in managing large-scale projects, he plays a
-            pivotal role in overseeing operations, ensuring efficiency, and
-            maintaining high-quality standards. His strategic leadership and
-            commitment to excellence contribute significantly to JRM's
-            reputation as a leading construction company.
-          </Text>
-        </Box>
+      <Box textAlign={{ base: "center", md: "left" }} m="20px">
+        <Flex direction={{ base: "column", md: "row" }} align="center" gap={8}>
+          <Circle size="300px" bg="gray.100" shadow="lg">
+            <Image
+              src="https://jrmconstruction.in/assets/images/team-1.jpg"
+              alt="Founder of JRM Construction"
+              boxSize="280px"
+              borderRadius="full"
+            />
+          </Circle>
 
-        <Circle size="300px" bg="gray.100" shadow="lg">
-          <Image
-            src="https://jrmconstruction.in/assets/images/team-1.jpg"
-            alt="Founder of JRM Construction"
-            boxSize="280px"
-            borderRadius="full"
-          />
-        </Circle>
-      </Flex>
+          <Box>
+            <Heading as="h2" size="lg">
+              Manikandan
+            </Heading>
+            <Text fontSize="sm" color="gray.500" mb={4}>
+              General Manager
+            </Text>
+            <Text fontSize="md" mr={200}>
+              Rebecca Malsawmi J is a distinguished construction professional
+              and pioneering woman entrepreneur in the construction-tech sector,
+              with over 14 years of experience. As the founder of JRM
+              Construction, she has positioned the company as a top builder in
+              Chennai, renowned for delivering ultra-premium projects along the
+              East Coast Road (ECR).
+            </Text>
+          </Box>
+        </Flex>
+      </Box>
     </Box>
   );
 };

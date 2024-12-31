@@ -40,7 +40,7 @@ const Footer = () => {
           <Text fontSize="lg" fontWeight="bold">
             Explore
           </Text>
-          <HStack p={6} color={"white"}>
+          <HStack p={6} color={"grey"}>
             <Link
               href="#home"
               _hover={{ textDecoration: "none", color: "white" }}

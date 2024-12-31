@@ -50,10 +50,6 @@ const Header = () => {
             Contact
           </Link>
         </Flex>
-
-        {/* Spacer to push content to the right */}
-
-        {/* Add any right-aligned elements here (optional) */}
       </Flex>
     </Box>
   );
