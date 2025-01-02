@@ -1,3 +1,5 @@
+// import { Avatar } from "@/Components/ui/avatar";
+// import { Rating } from "@/Components/ui/rating";
 import {
   Box,
   Card,
@@ -5,8 +7,10 @@ import {
   Grid,
   GridItem,
   Heading,
+  HStack,
   Image,
   Link,
+  Stack,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
@@ -18,9 +22,9 @@ const Home = () => {
       <Image
         src="https://files.oaiusercontent.com/file-FKrjXiLcM3iSmv6QuFT8vb?se=2024-12-30T07%3A10%3A56Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D08506a4f-2a3d-4f81-a1d5-638583d6f65d.webp&sig=/9M4Yd6OcqFP2Wti/R3CXQ9R4J4B0etxCuRo8QNsvrI%3D"
         alt="Team Image"
-        height={{ base: "auto", md: "500px", lg: "700px" }} // Adjust height on different screen sizes
-        width="100%" // Make the image take up the full width of its container
-        objectFit="cover" // Ensure the image covers the container without stretching
+        height={{ base: "auto", md: "500px", lg: "700px" }}
+        width="100%"
+        objectFit="cover"
         mb="50px"
       />
       <Flex align="center" justify="center" direction="column" p={12}>
@@ -209,6 +213,120 @@ const Home = () => {
             </Card.Body>
           </Card.Root>
         </Flex>
+
+        {/*Projects We have Delivered*/}
+        <>
+          <Heading textAlign="center" fontSize="2xl" mb={2}>
+            Projects We are delivered
+          </Heading>
+          <Box
+            background="gray.200"
+            padding="4"
+            color="black"
+            mx={250}
+            mb={50}
+            mt={10}
+            borderRadius={10}
+          >
+            <Flex align="center" gap={4}>
+              <Image
+                height="200px"
+                borderRadius={10}
+                src="https://media.istockphoto.com/id/1449364000/photo/minimalist-style-tiny-room.jpg?s=612x612&w=0&k=20&c=uokTOpJl8Hoc4HGqJPicYjy8SBMwCEWkGLUhhvJYgTA="
+                alt="Project"
+              />
+              <Box
+                padding="4"
+                background="gray.100"
+                borderRadius="md"
+                boxShadow="sm"
+              >
+                <Heading fontSize="lg" mt={2} mb={2}>
+                  Interior Design
+                </Heading>
+                <Flex align="center" mb={3}>
+                  <Text fontSize="sm" color="gray.600">
+                    Madhavaram
+                  </Text>
+                </Flex>
+                <Text fontSize="md">
+                  This is a description of the project. It highlights the key
+                  features and achievements, providing a brief overview of what
+                  was delivered.
+                </Text>
+              </Box>
+            </Flex>
+          </Box>
+          {/* Second Column*/}
+          <Box
+            background="gray.200"
+            padding="4"
+            color="black"
+            mx={250}
+            mb={50}
+            mt={10}
+            borderRadius={10}
+          >
+            <Flex align="center" gap={4}>
+              <Image
+                height="200px"
+                borderRadius={10}
+                src="https://media.istockphoto.com/id/1449364000/photo/minimalist-style-tiny-room.jpg?s=612x612&w=0&k=20&c=uokTOpJl8Hoc4HGqJPicYjy8SBMwCEWkGLUhhvJYgTA="
+                alt="Project"
+              />
+              <Box
+                padding="4"
+                background="gray.100"
+                borderRadius="md"
+                boxShadow="sm"
+              >
+                <Heading fontSize="lg" mt={2} mb={2}>
+                  Interior Design
+                </Heading>
+                <Flex align="center" mb={3}>
+                  <Text fontSize="sm" color="gray.600">
+                    Madhavaram
+                  </Text>
+                </Flex>
+                <Text fontSize="md">
+                  This is a description of the project. It highlights the key
+                  features and achievements, providing a brief overview of what
+                  was delivered.
+                </Text>
+              </Box>
+            </Flex>
+          </Box>
+        </>
+
+        {/* Ratings
+        <>
+          <Box>
+            <Stack maxW="320px" gap="4">
+              <Rating
+                colorPalette="orange"
+                readOnly
+                size="xs"
+                defaultValue={5}
+              />
+
+              <Text>
+                Sage is a great software engineer. He is very professional and
+                knowledgeable.
+              </Text>
+
+              <HStack gap="4">
+                <Avatar
+                  name="Matthew Jones"
+                  src="https://randomuser.me/api/portraits/men/70.jpg"
+                />
+                <Stack textStyle="sm" gap="0">
+                  <Text fontWeight="medium">Matthew Jones</Text>
+                  <Text color="fg.muted">CTO, Company</Text>
+                </Stack>
+              </HStack>
+            </Stack>
+          </Box>
+        </> */}
       </Box>
     </Box>
   );

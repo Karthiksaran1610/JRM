@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import WhatWedo from "./Pages/WhatWedo";
+import Career from "./Pages/Career";
 // import Career from "./Pages/Career";
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/whatwedo" element={<WhatWedo />} />
         <Route path="/team" element={<Team />} />
-        {/* <Route path="/career" element={<Career />} /> */}
+        <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
