@@ -1,15 +1,14 @@
-import { Button } from '@/Components/ui/button'
-import { Box } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Heading } from "@chakra-ui/react";
+import React from "react";
 
 const Career = () => {
   return (
     <Box>
-        caaaa
-
-        <Button>j</Button>
+     <Heading fontSize="6xl" mb={50} mt={100} ml={100} color={"orange"}>
+             Career
+           </Heading>
     </Box>
   )
-}
+};
 
-export default Career
+export default Career;

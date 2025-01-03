@@ -1,21 +1,43 @@
-// import { Avatar } from "@/Components/ui/avatar";
-// import { Rating } from "@/Components/ui/rating";
 import {
+  AccordionItem,
+  AccordionItemContent,
+  AccordionItemTrigger,
+  AccordionRoot,
   Box,
   Card,
   Flex,
   Grid,
   GridItem,
   Heading,
-  HStack,
   Image,
   Link,
-  Stack,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
 
 const Home = () => {
+  const items = [
+    {
+      value: "1",
+      title: " What types of projects does your company handle?",
+      text: "We specialize in residential, commercial, industrial construction, and renovation projects. Whether you need a custom-built home, office space, or factory setup, we have the expertise to deliver high-quality results",
+    },
+    {
+      value: "2",
+      title: " How much will my project cost?",
+      text: "The cost of a project depends on several factors, including the size, complexity, materials used, and location. We provide a detailed estimate after understanding your requirements and conducting a site visit. Rest assured, our pricing is transparent, with no hidden charges.",
+    },
+    {
+      value: "3",
+      title: "How do you ensure the quality of your work?",
+      text: "We ensure quality by using top-grade materials, working with skilled professionals, and following strict industry standards. Every project goes through rigorous checks at each stage to guarantee durability and customer satisfaction",
+    },
+    {
+      value: "4",
+      title: " What is the timeline for completing my project?",
+      text: "The timeline for completing a project varies depending on its scope and complexity. After assessing your requirements and conducting a site evaluation, we will provide you with a detailed schedule. We prioritize efficiency and strive to deliver your project on time without compromising on quality.",
+    },
+  ];
   return (
     <Box>
       <Heading as="h1" size="4xl" textAlign="center"></Heading>
@@ -327,6 +349,22 @@ const Home = () => {
             </Stack>
           </Box>
         </> */}
+
+        {/*FAQs*/}
+
+        <Heading textAlign="center" fontSize="2xl" mb={2}>
+          Frequently Asked Questions
+        </Heading>
+        <Box ml={200} mr={200} mt={3} mb={6}>
+          <AccordionRoot collapsible defaultValue={["b"]}>
+            {items.map((item, index) => (
+              <AccordionItem key={index} value={item.value}>
+                <AccordionItemTrigger>{item.title}</AccordionItemTrigger>
+                <AccordionItemContent>{item.text}</AccordionItemContent>
+              </AccordionItem>
+            ))}
+          </AccordionRoot>
+        </Box>
       </Box>
     </Box>
   );
