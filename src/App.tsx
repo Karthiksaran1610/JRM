@@ -8,6 +8,10 @@ import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import WhatWedo from "./Pages/WhatWedo";
 import Career from "./Pages/Career";
+import Construction from "./Pages/Construction";
+import Renovation from "./Pages/Renovation";
+import Interior from "./Pages/Interior";
+import Architect from "./Pages/Architect";
 // import Career from "./Pages/Career";
 
 const App = () => {
@@ -21,6 +25,10 @@ const App = () => {
         <Route path="/team" element={<Team />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/construction" element={<Construction />} />
+        <Route path="/renovation" element={<Renovation />} />
+        <Route path="/architect" element={<Architect />} />
+        <Route path="/interior" element={<Interior />} />
       </Routes>
       <Footer />
     </BrowserRouter>

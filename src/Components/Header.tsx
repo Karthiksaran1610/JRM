@@ -1,7 +1,14 @@
-import React from "react";
-import { Box, Flex, Link, Image, } from "@chakra-ui/react";
+import { Box, Flex, Link, Image } from "@chakra-ui/react";
+import { Button } from "./ui/button";
+import { MenuContent, MenuItem, MenuRoot, MenuTrigger } from "./ui/menu";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const navigateTo = (path: string) => {
+    navigate(path);
+  };
+
   return (
     <Box bg="white" w="100%" p={4} color="white">
       <Flex align="center" justify="space-between" maxW="1200px" mx="auto">
@@ -25,12 +32,44 @@ const Header = () => {
           >
             About
           </Link>
-          <Link
-            href="/Whatwedo"
-            _hover={{ textDecoration: "none", color: "gray.200" }}
-          >
-            What We Do
-          </Link>
+
+          {/*What we Do */}
+          <MenuRoot>
+            <MenuTrigger>
+              <Button size="sm" variant="outline" _hover={{ bg: "gray.100" }}>
+                What We Do
+              </Button>
+            </MenuTrigger>
+
+            <MenuContent>
+              <MenuItem
+                value="construction"
+                onClick={() => navigateTo("/construction")}
+              >
+                Construction
+              </MenuItem>
+              <MenuItem
+                value="renovation"
+                onClick={() => navigateTo("/renovation")}
+              >
+                Renovation
+              </MenuItem>
+              <MenuItem
+                value="architect"
+                onClick={() => navigateTo("/architect")}
+              >
+                Architect
+              </MenuItem>
+              <MenuItem
+                value="interior"
+                onClick={() => navigateTo("/interior")}
+              >
+                Interior
+              </MenuItem>
+            </MenuContent>
+          </MenuRoot>
+
+          {/* Dropdown Menu */}
           <Link
             href="/team"
             _hover={{ textDecoration: "none", color: "gray.200" }}
