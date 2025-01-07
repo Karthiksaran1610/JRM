@@ -42,7 +42,7 @@ const Home = () => {
     <Box>
       <Heading as="h1" size="4xl" textAlign="center"></Heading>
       <Image
-        src="https://files.oaiusercontent.com/file-FKrjXiLcM3iSmv6QuFT8vb?se=2024-12-30T07%3A10%3A56Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D08506a4f-2a3d-4f81-a1d5-638583d6f65d.webp&sig=/9M4Yd6OcqFP2Wti/R3CXQ9R4J4B0etxCuRo8QNsvrI%3D"
+        src="https://media.istockphoto.com/id/689935500/photo/iron-rod.jpg?s=612x612&w=0&k=20&c=fE8ZdVmvzjjCSwOyVi4nspC7HHdU_tBtBgNqefcWBVo="
         alt="Team Image"
         height={{ base: "auto", md: "500px", lg: "700px" }}
         width="100%"

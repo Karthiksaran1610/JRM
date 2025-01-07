@@ -11,7 +11,7 @@ import Career from "./Pages/Career";
 import Construction from "./Pages/Construction";
 import Renovation from "./Pages/Renovation";
 import Interior from "./Pages/Interior";
-import Architect from "./Pages/Architect";
+import Architecture from "./Pages/Architecture";
 // import Career from "./Pages/Career";
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/construction" element={<Construction />} />
         <Route path="/renovation" element={<Renovation />} />
-        <Route path="/architect" element={<Architect />} />
+        <Route path="/architecture" element={<Architecture />} />
         <Route path="/interior" element={<Interior />} />
       </Routes>
       <Footer />

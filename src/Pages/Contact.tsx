@@ -72,8 +72,8 @@ const Contact = () => {
             <Field label="Name" required>
               <Input
                 placeholder="Enter your name"
-                size="lg"
-                fontSize={{ base: "sm", md: "md" }}
+                size="xl" // Larger size
+                fontSize={{ base: "md", md: "lg" }} // Larger font size
                 width="100%"
               />
             </Field>
@@ -81,8 +81,8 @@ const Contact = () => {
             <Field label="Company" required>
               <Input
                 placeholder="Enter your company"
-                size="lg"
-                fontSize={{ base: "sm", md: "md" }}
+                size="xl" // Larger size
+                fontSize={{ base: "md", md: "lg" }} // Larger font size
                 width="100%"
               />
             </Field>
@@ -91,8 +91,8 @@ const Contact = () => {
             <Field label="Email" required>
               <Input
                 placeholder="Enter your email"
-                size="lg"
-                fontSize={{ base: "sm", md: "md" }}
+                size="xl" // Larger size
+                fontSize={{ base: "md", md: "lg" }} // Larger font size
                 width="100%"
               />
             </Field>
@@ -100,8 +100,8 @@ const Contact = () => {
             <Field label="Phone" required>
               <Input
                 placeholder="Enter your phone number"
-                size="lg"
-                fontSize={{ base: "sm", md: "md" }}
+                size="xl" // Larger size
+                fontSize={{ base: "md", md: "lg" }} // Larger font size
                 width="100%"
               />
             </Field>
@@ -111,16 +111,19 @@ const Contact = () => {
               <Field label="Message" required>
                 <Textarea
                   placeholder="Enter your message"
-                  size="lg"
-                  fontSize={{ base: "sm", md: "md" }}
+                  size="xl" // Larger size
+                  fontSize={{ base: "md", md: "lg" }} // Larger font size
                   width="100%"
+                  height="150px" // Added height for larger textarea
                 />
               </Field>
             </GridItem>
           </Grid>
 
           <Center mt={6}>
-            <Button colorScheme="blue" type="submit" size="lg" mb={20}>
+            <Button colorScheme="blue" type="submit" size="xl" mb={20}>
+              {" "}
+              {/* Larger button size */}
               Submit
             </Button>
           </Center>

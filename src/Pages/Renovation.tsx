@@ -13,8 +13,12 @@ const Renovation = () => {
         alignItems="center"
         justifyContent="center"
         overflow="hidden"
-        bg="gray.800"
+        bgImage="url('https://media.istockphoto.com/id/991867390/photo/that-thing-is-next-on-our-housing-plan.jpg?s=612x612&w=0&k=20&c=7emEOvQq5H6RQl-g1JV1FHXSg_k64ArCIRxdY1zZjBc=')"
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        // position="center"
         mb={20}
+        backgroundColor="gray.200" // Fallback color
       >
         {/* Motion Div for the Text */}
         <motion.div

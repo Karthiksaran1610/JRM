@@ -56,9 +56,9 @@ const Header = () => {
               </MenuItem>
               <MenuItem
                 value="architect"
-                onClick={() => navigateTo("/architect")}
+                onClick={() => navigateTo("/architecture")}
               >
-                Architect
+                Architecture
               </MenuItem>
               <MenuItem
                 value="interior"

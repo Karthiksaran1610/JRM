@@ -5,16 +5,20 @@ const Construction = () => {
   return (
     <>
       <Box
-        position="relative"
-        w="100%"
-        h={{ base: "60vh", md: "80vh" }} // Responsive height
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        overflow="hidden"
-        bg="gray.800"
-        mb={20}
-      >
+              position="relative"
+              w="100%"
+              h={{ base: "60vh", md: "80vh" }} // Responsive height
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              overflow="hidden"
+              bgImage="url('https://media.istockphoto.com/id/1178982949/photo/man-holding-blue-helmet-close-up.jpg?s=612x612&w=0&k=20&c=MyliIMUynBu6lsT8kh_9FvqBKoIUwWGg-iuoNippZPI=')"
+              bgSize="cover"
+              bgRepeat="no-repeat"
+              // position="center"
+              mb={20}
+              backgroundColor="gray.200" // Fallback color
+            >
         {/* Motion Div for the Text */}
         <motion.div
           initial={{ x: "-100%" }}
