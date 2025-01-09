@@ -5,20 +5,20 @@ const Construction = () => {
   return (
     <>
       <Box
-              position="relative"
-              w="100%"
-              h={{ base: "60vh", md: "80vh" }} // Responsive height
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              overflow="hidden"
-              bgImage="url('https://media.istockphoto.com/id/1178982949/photo/man-holding-blue-helmet-close-up.jpg?s=612x612&w=0&k=20&c=MyliIMUynBu6lsT8kh_9FvqBKoIUwWGg-iuoNippZPI=')"
-              bgSize="cover"
-              bgRepeat="no-repeat"
-              // position="center"
-              mb={20}
-              backgroundColor="gray.200" // Fallback color
-            >
+        position="relative"
+        w="100%"
+        h={{ base: "60vh", md: "80vh" }} // Responsive height
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        overflow="hidden"
+        bgImage="url('https://media.istockphoto.com/id/1178982949/photo/man-holding-blue-helmet-close-up.jpg?s=612x612&w=0&k=20&c=MyliIMUynBu6lsT8kh_9FvqBKoIUwWGg-iuoNippZPI=')"
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        // position="center"
+        mb={20}
+        backgroundColor="gray.200" // Fallback color
+      >
         {/* Motion Div for the Text */}
         <motion.div
           initial={{ x: "-100%" }}
@@ -261,18 +261,18 @@ const Construction = () => {
       <Box padding={{ base: "10px", md: "20px" }}>
         <SimpleGrid columns={{ base: 2, md: 4 }} padding={6}>
           {[
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC7_ry3_ZZ34Av1ILCW4s4GqbnQuANY9GReQ&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWclKFa4R3p5dppVVSbgSCeQ9uNRIpuiOTwQ&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw3m0tBxq6H8cQr4V07Agrgbl6XQUvfY65-A&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz84-_nFxEihFpWJztwDAPkA67b5o_3rt59A&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlaggnElVft16w68juQ2GWhvVZWDZe6l-gXw&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT86D5gzEmBx-KcppwwkBxP1m4I0dcVsBVttA&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90-70mYEaORQdXVTQgOyIh3EVekjZs1M5pg&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_m9kMDDJp1_ysLvsgH1z4xBuPdslKzAMYw&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuublebL-qGjOJeJEWmJlHcD38ED36HZJ8IQ&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBbRPRNO53y6GgJ1BDiO7gozR6SRLmz4cOw&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSjJhR5_QcWQ3PpQt6P2OG6RAd5rqGRJI8IQ&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjFpOjme6zoU0ZW2OYm_p9fOAMWyHKpBAPLA&s",
+            "https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150749.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/movie-night-by-pool-whole-family_1268-31098.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/luxury-architecture-exterior-design_23-2151920952.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-electric-car-building_23-2148972401.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-model-house-building_23-2150761008.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004030.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/facade-modern-house_1268-24725.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799725.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004027.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table_105762-1783.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/render-architectural-matrix-stunning-villa-background_1409-5190.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/house-with-large-roof-balcony-with-tree-middle_1340-35839.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
           ].map((src, index) => (
             <Box
               key={index}

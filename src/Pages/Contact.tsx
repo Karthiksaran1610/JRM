@@ -12,31 +12,41 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React from "react";
 
 const Contact = () => {
   return (
     <Box>
       {/* Contact US */}
-      <Heading
-        fontSize={{ base: "4xl", md: "6xl" }}
-        mb={50}
-        mt={100}
-        ml={{ base: 0, md: 100 }}
-        color="orange"
+      <Box
+        position="relative"
+        w="100%"
+        h={{ base: "60vh", md: "80vh" }} // Responsive height
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        overflow="hidden"
+        // bgImage="url('https://img.freepik.com/free-photo/contact-us-communication-support-service-assistance-concept_53876-128103.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid')"
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        mb={20}
+        backgroundColor="gray.800" // Fallback color
       >
-        Contact US
-      </Heading>
-      <Text fontSize={{ base: "lg", md: "2xl" }} ml={{ base: 0, md: 110 }}>
-        Our Experienced Team is
-      </Text>
-      <Text
-        fontSize={{ base: "lg", md: "2xl" }}
-        ml={{ base: 0, md: 110 }}
-        mb={200}
-      >
-        Ready to Answer Anything
-      </Text>
+        <Box
+          textAlign="center"
+          color="white"
+          textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+        >
+          <Text fontSize={{ base: "4xl", md: "6xl" }} fontWeight="bold" mb={4}>
+            Contact Us
+          </Text>
+
+          <Text fontSize={{ base: "lg", md: "2xl" }} maxW="600px">
+            Our experienced team will contact you
+          </Text>
+        </Box>
+      </Box>
 
       {/* Form Contact */}
       <Flex
