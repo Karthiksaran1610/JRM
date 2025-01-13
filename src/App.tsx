@@ -12,12 +12,14 @@ import Construction from "./Pages/Construction";
 import Renovation from "./Pages/Renovation";
 import Interior from "./Pages/Interior";
 import Architecture from "./Pages/Architecture";
+import { Toaster } from "./Components/ui/toaster";
 // import Career from "./Pages/Career";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
+      <Toaster />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

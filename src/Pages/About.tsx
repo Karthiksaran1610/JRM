@@ -1,17 +1,7 @@
-import { Box, Heading, Text, Flex, Image, Stack, HStack } from "@chakra-ui/react";
-import Slider from "react-slick";
+import { Box, Heading, Text, Flex, Image } from "@chakra-ui/react";
 import CountUp from "react-countup";
-import { Rating } from "@/Components/ui/rating";
-import { Avatar } from "@/Components/ui/avatar";
 
 const About = () => {
-  const settings = {
-    dots: true,          // Enable dots for navigation
-    infinite: true,      // Infinite loop scrolling
-    speed: 500,          // Animation speed
-    slidesToShow: 3,     // Number of slides to show at a time
-    slidesToScroll: 1,   // Number of slides to scroll at a time
-  };
   return (
     <>
       <Box
@@ -124,7 +114,7 @@ const About = () => {
           </Box>
         </Flex>
 
-        {/* Awards and Recognization */}
+        {/* Awards and Certifications */}
 
         <Box>
           <Heading
@@ -136,6 +126,8 @@ const About = () => {
           >
             Awards & Certifications
           </Heading>
+
+          {/*ISO Certificate*/}
           <Box padding={{ base: "10px", md: "20px" }}>
             <Flex
               direction={{ base: "column", md: "row" }} // Stack vertically on small screens, horizontally on larger screens
@@ -172,22 +164,21 @@ const About = () => {
                   ISO 9001 : 2015
                 </Heading>
                 <Text color="gray.600">
-                  "We specialize in designing and building custom residential
-                  homes that perfectly match your vision and lifestyle. Our
-                  expert team works closely with clients to create personalized,
-                  high-quality homes that reflect unique tastes and preferences.
-                  Whether you're looking for a modern, traditional, or luxury
-                  home, we ensure every detail is crafted to exceed your
-                  expectations. With a focus on craftsmanship and customer
-                  satisfaction, we provide a seamless experience from design to
-                  completion, delivering results that truly meet your needs and
-                  desires."
+                  ISO 9001:2015 Certification is a globally recognized standard
+                  for Quality Management Systems (QMS). It ensures organizations
+                  consistently meet customer and regulatory requirements. The
+                  certification improves customer satisfaction, operational
+                  efficiency, and fosters continuous improvement. It
+                  demonstrates a company’s commitment to quality and enhances
+                  brand reputation. The certification process involves a
+                  thorough audit to ensure compliance with ISO standards.
                 </Text>
               </Box>
             </Flex>
           </Box>
         </Box>
 
+        {/*Best Architect Award*/}
         <Box padding={{ base: "10px", md: "20px" }}>
           <Flex
             direction={{ base: "column", md: "row" }} // Stack vertically on small screens, horizontally on larger screens
@@ -207,23 +198,23 @@ const About = () => {
                 fontWeight="lighter"
                 mb={4}
               >
-                Best Architecture Award 2019
+                Top 10 Architect firm in chennai
               </Heading>
               <Text color="gray.600">
-                "We specialize in designing and building custom residential
-                homes that perfectly match your vision and lifestyle. Our expert
-                team works closely with clients to create personalized,
-                high-quality homes that reflect unique tastes and preferences.
-                Whether you're looking for a modern, traditional, or luxury
-                home, we ensure every detail is crafted to exceed your
-                expectations. With a focus on craftsmanship and customer
-                satisfaction, we provide a seamless experience from design to
-                completion, delivering results that truly meet your needs and
-                desires."
+                JRM Construction, a leading construction company in Chennai, was
+                honored with the prestigious Top 10 Architect Firm in Chennai
+                Award in 2014, presented by Silicon India. This award recognizes
+                the company’s excellence in architectural design, innovation,
+                and quality in the construction industry. The recognition
+                highlights JRM Construction’s commitment to delivering
+                exceptional residential building services with a focus on modern
+                design and sustainable practices. Winning this award has further
+                strengthened the company’s reputation as a trusted name in the
+                Chennai construction sector, ensuring client satisfaction and
+                fostering long-term success in the industry.
               </Text>
             </Box>
 
-            {/* Image Section */}
             <Box
               position="relative"
               overflow="hidden"
@@ -238,6 +229,59 @@ const About = () => {
             </Box>
           </Flex>
 
+          {/*Best Contractor Award*/}
+          <Box padding={{ base: "10px", md: "20px" }}>
+            <Flex
+              direction={{ base: "column", md: "row" }} // Stack vertically on small screens, horizontally on larger screens
+              gap={6} // Gap between text and image
+              justify="flex-start"
+              mb={10}
+            >
+              <Box
+                position="relative"
+                overflow="hidden"
+                width={{ base: "100%", md: "500px" }} // Full width on smaller screens, fixed width on larger ones
+              >
+                <Image
+                  src="https://img.freepik.com/free-vector/iso-certification-concept-illustration_114360-6017.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid"
+                  alt="Residential Construction"
+                  aspectRatio={4 / 3}
+                  height="auto"
+                />
+              </Box>
+
+              <Box
+                flex="1"
+                padding={{ base: "10px", md: "20px" }}
+                textAlign={{ base: "center", md: "left" }} // Center align text on small screens, left align on larger ones
+              >
+                <Heading
+                  as="h3"
+                  size={{ base: "xl", md: "4xl" }}
+                  fontWeight="lighter"
+                  mb={4}
+                  mt={6}
+                >
+                  Best Residential Construction Contractor in chennai
+                </Heading>
+                <Text color="gray.600">
+                  JRM Construction was honored with the Best Residential
+                  Construction Contractor in Chennai by Indian Glory,
+                  recognizing the company's outstanding contribution to the
+                  residential construction industry. This prestigious award
+                  highlights JRM Construction’s commitment to excellence in
+                  delivering high-quality residential buildings, with a focus on
+                  craftsmanship, innovation, and customer satisfaction. Known
+                  for its attention to detail and timely project delivery, JRM
+                  Construction has earned a reputation as one of the leading
+                  contractors in Chennai. The award further strengthens the
+                  company’s position as a trusted and reliable choice for
+                  residential construction projects.
+                </Text>
+              </Box>
+            </Flex>
+          </Box>
+
           {/* Client Testinominals... */}
           <Heading
             textAlign="center"
@@ -248,46 +292,6 @@ const About = () => {
           >
             Client Testimonials
           </Heading>
-
-          <Slider {...settings}>
-      <Stack maxW="320px" gap="4">
-        <Rating colorPalette="orange" readOnly size="xs" defaultValue={5} />
-        <Text>
-          Sage is a great software engineer. He is very professional and
-          knowledgeable.
-        </Text>
-        <HStack gap="4">
-          <Avatar
-            name="Matthew Jones"
-            src="https://randomuser.me/api/portraits/men/70.jpg"
-          />
-          <Stack textStyle="sm" gap="0">
-            <Text fontWeight="medium">Matthew Jones</Text>
-            <Text color="fg.muted">CTO, Company</Text>
-          </Stack>
-        </HStack>
-      </Stack>
-
-      {/* Duplicate the same Stack for additional slides */}
-      <Stack maxW="320px" gap="4">
-        <Rating colorPalette="orange" readOnly size="xs" defaultValue={4} />
-        <Text>
-          Alex is an amazing team leader. He is very supportive and motivating.
-        </Text>
-        <HStack gap="4">
-          <Avatar
-            name="Alex Smith"
-            src="https://randomuser.me/api/portraits/men/60.jpg"
-          />
-          <Stack textStyle="sm" gap="0">
-            <Text fontWeight="medium">Alex Smith</Text>
-            <Text color="fg.muted">Team Lead, Company</Text>
-          </Stack>
-        </HStack>
-      </Stack>
-
-      
-    </Slider>
         </Box>
       </Box>
     </>
