@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import About from "./Pages/About";
@@ -13,7 +12,6 @@ import Renovation from "./Pages/Renovation";
 import Interior from "./Pages/Interior";
 import Architecture from "./Pages/Architecture";
 import { Toaster } from "./Components/ui/toaster";
-// import Career from "./Pages/Career";
 
 const App = () => {
   return (

@@ -40,7 +40,7 @@ const Footer = () => {
           {/*Explore*/}
           <Box>
             <Heading color="white">Explore</Heading>
-            <Grid pt="40px" color="gray">
+            <Grid pt="40px" color="whiteAlpha.100">
               <Link href="/">Home</Link>
               <Link href="/about">About</Link>
               <Link href="/whatwedo">Whatwedo</Link>

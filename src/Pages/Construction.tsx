@@ -7,7 +7,7 @@ const Construction = () => {
       <Box
         position="relative"
         w="100%"
-        h={{ base: "60vh", md: "80vh" }} // Responsive height
+        h={{ base: "60vh", md: "80vh" }}
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -15,9 +15,8 @@ const Construction = () => {
         bgImage="url('https://media.istockphoto.com/id/1178982949/photo/man-holding-blue-helmet-close-up.jpg?s=612x612&w=0&k=20&c=MyliIMUynBu6lsT8kh_9FvqBKoIUwWGg-iuoNippZPI=')"
         bgSize="cover"
         bgRepeat="no-repeat"
-        // position="center"
         mb={20}
-        backgroundColor="gray.200" // Fallback color
+        backgroundColor="gray.200"
       >
         {/* Motion Div for the Text */}
         <motion.div
@@ -105,8 +104,8 @@ const Construction = () => {
         </Heading>
         <Box padding={{ base: "10px", md: "20px" }}>
           <Flex
-            direction={{ base: "column", md: "row" }} // Stack vertically on small screens, horizontally on larger screens
-            gap={6} // Gap between text and image
+            direction={{ base: "column", md: "row" }}
+            gap={6}
             justify="flex-start"
             mb={10}
           >
@@ -114,7 +113,7 @@ const Construction = () => {
             <Box
               position="relative"
               overflow="hidden"
-              width={{ base: "100%", md: "500px" }} // Full width on smaller screens, fixed width on larger ones
+              width={{ base: "100%", md: "500px" }}
             >
               <Image
                 src="https://thomassattlerhomes.com/wp-content/uploads/2023/05/Bemis-Exterior-Rendering-Final.jpg"
@@ -128,7 +127,7 @@ const Construction = () => {
             <Box
               flex="1"
               padding={{ base: "10px", md: "20px" }}
-              textAlign={{ base: "center", md: "left" }} // Center align text on small screens, left align on larger ones
+              textAlign={{ base: "center", md: "left" }}
             >
               <Heading
                 as="h3"
@@ -158,7 +157,7 @@ const Construction = () => {
       {/* Luxury Villas */}
       <Box padding={{ base: "10px", md: "20px" }}>
         <Flex
-          direction={{ base: "column", md: "row" }} // Stack vertically on small screens, horizontally on larger screens
+          direction={{ base: "column", md: "row" }}
           gap={6}
           justify="flex-start"
           mb={10}
@@ -194,7 +193,7 @@ const Construction = () => {
           <Box
             position="relative"
             overflow="hidden"
-            width={{ base: "100%", md: "500px" }} // Full width on smaller screens, fixed width on larger ones
+            width={{ base: "100%", md: "500px" }}
           >
             <Image
               src="https://www.ikonmarket.com/assets/images/marketing-articles/luxury-home.jpg"
@@ -209,7 +208,7 @@ const Construction = () => {
       {/* Smart Home */}
       <Box padding={{ base: "10px", md: "20px" }}>
         <Flex
-          direction={{ base: "column", md: "row" }} // Stack vertically on small screens, horizontally on larger screens
+          direction={{ base: "column", md: "row" }}
           gap={6}
           justify="flex-start"
           mb={10}

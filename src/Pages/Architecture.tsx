@@ -7,7 +7,7 @@ const Architecture = () => {
       <Box
         position="relative"
         w="100%"
-        h={{ base: "60vh", md: "80vh" }} // Responsive height
+        h={{ base: "60vh", md: "80vh" }}
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -15,9 +15,8 @@ const Architecture = () => {
         bgImage="url('https://img.freepik.com/free-photo/building_1127-3192.jpg?t=st=1736225455~exp=1736229055~hmac=93fd481752478c3c91205b06df9aba7d6e1f701150e57d6bcf0486022d32c525&w=996')"
         bgSize="cover"
         bgRepeat="no-repeat"
-        // position="center"
         mb={20}
-        backgroundColor="gray.200" // Fallback color
+        backgroundColor="gray.200"
       >
         {/* Motion Div for the Text */}
         <motion.div
@@ -101,23 +100,27 @@ const Architecture = () => {
         height="auto"
         p={5}
       >
-        <Box width="80%" maxWidth="1200px">
+        <Box width="100%" maxWidth="1200px">
           <Heading
             mb={6}
             textAlign="center"
-            fontSize="3xl"
+            fontSize={{ base: "2xl", md: "3xl" }}
             fontWeight="lighter"
           >
             Our Architecture Process
           </Heading>
-          <Grid templateColumns="repeat(3, 1fr)" gap={6} justifyItems="center">
+          <Grid
+            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
+            gap={{ base: 4, md: 6 }}
+            justifyItems="center"
+          >
             {/* First Row */}
             <Box p={5} borderWidth={1} borderRadius="md" boxShadow="sm">
               <Image
                 src="https://img.freepik.com/free-photo/architects-working-project_53876-46878.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid"
                 alt="Concept Design"
                 borderRadius="md"
-                height="250px" // Fixed height for consistency
+                height="250px"
                 objectFit="cover"
               />
               <Heading fontSize="xl" fontWeight="lighter" mt={4}>
@@ -170,7 +173,7 @@ const Architecture = () => {
                 src="https://img.freepik.com/free-photo/site-engineer-construction-site_53876-42833.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid"
                 alt="Planning"
                 borderRadius="md"
-                height="250px" // Matching height for second row images
+                height="250px"
                 objectFit="cover"
               />
               <Heading size="md" mt={4} fontSize="xl" fontWeight="lighter">
@@ -220,44 +223,44 @@ const Architecture = () => {
       </Box>
 
       {/* Architecture Images */}
-            <Box padding={{ base: "10px", md: "20px" }}>
-              <SimpleGrid columns={{ base: 2, md: 4 }} padding={6}>
-                {[
-                  "https://img.freepik.com/free-photo/three-dimensional-house-model_23-2151003979.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-photo/view-3d-house-model_23-2150761032.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-psd/close-up-house-isolated_23-2151616349.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-photo/luxurious-villa-with-modern-architectural-design_23-2151694078.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-psd/3d-house-property-illustration_23-2151682308.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-vector/modern-house-pack_23-2147778067.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799727.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-vector/collection-modern-realistic-houses_23-2147785740.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-photo/3d-rendering-isometric-house-model_23-2150799795.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-vector/modern-flat-residential-house-illustration-set_1344-248.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-photo/house-3d-rendering-design_23-2150505837.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                  "https://img.freepik.com/free-photo/3d-house-plans_1048-4704.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                ].map((src, index) => (
-                  <Box
-                    key={index}
-                    overflow="hidden"
-                    position="relative"
-                    padding="5px"
-                    _hover={{
-                      boxShadow: "xl",
-                      transform: "scale(1.05)",
-                      transition: "transform 0.3s ease-in-out",
-                    }}
-                  >
-                    <Image
-                      src={src}
-                      alt={`Construction Image ${index + 1}`}
-                      width="100%"
-                      height="100%"
-                      objectFit="cover"
-                    />
-                  </Box>
-                ))}
-              </SimpleGrid>
+      <Box padding={{ base: "10px", md: "20px" }}>
+        <SimpleGrid columns={{ base: 2, md: 4 }} padding={6}>
+          {[
+            "https://img.freepik.com/free-photo/three-dimensional-house-model_23-2151003979.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/view-3d-house-model_23-2150761032.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-psd/close-up-house-isolated_23-2151616349.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/luxurious-villa-with-modern-architectural-design_23-2151694078.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-psd/3d-house-property-illustration_23-2151682308.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-vector/modern-house-pack_23-2147778067.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799727.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-vector/collection-modern-realistic-houses_23-2147785740.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-rendering-isometric-house-model_23-2150799795.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-vector/modern-flat-residential-house-illustration-set_1344-248.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/house-3d-rendering-design_23-2150505837.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-house-plans_1048-4704.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+          ].map((src, index) => (
+            <Box
+              key={index}
+              overflow="hidden"
+              position="relative"
+              padding="5px"
+              _hover={{
+                boxShadow: "xl",
+                transform: "scale(1.05)",
+                transition: "transform 0.3s ease-in-out",
+              }}
+            >
+              <Image
+                src={src}
+                alt={`Construction Image ${index + 1}`}
+                width="100%"
+                height="100%"
+                objectFit="cover"
+              />
             </Box>
+          ))}
+        </SimpleGrid>
+      </Box>
     </>
   );
 };

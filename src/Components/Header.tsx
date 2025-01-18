@@ -10,19 +10,31 @@ const Header = () => {
   };
 
   return (
-    <Box bg="white" w="100%" p={4} color="white">
-      <Flex align="center" justify="space-between" maxW="1200px" mx="auto">
+    <Box bg="white" w="100%" p={{ base: 3, md: 4 }} color="white">
+      <Flex
+        align="center"
+        justify="space-between"
+        maxW="1200px"
+        mx="auto"
+        flexDirection={{ base: "column", md: "row" }}
+        gap={{ base: 4, md: 8 }}
+      >
         {/* Company Logo */}
         <Image
           className="logo"
-          src="	https://jrmconstruction.in/assets/images/logo.png" // Replace with your logo path
+          src="https://jrmconstruction.in/assets/images/logo.png" 
           alt="Company Logo"
-          boxSize={{ base: "40px", md: "60px", lg: "80px" }} // Adjust the size of the logo
-          // mr={4} // Add space to the right of the logo
+          boxSize={{ base: "40px", sm: "50px", md: "60px", lg: "80px" }} 
         />
 
         {/* Menu Items */}
-        <Flex className="navitems" as="nav" gap={{ base: 4, md: 8 }}>
+        <Flex
+          className="navitems"
+          as="nav"
+          gap={{ base: 4, md: 8 }}
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems={{ base: "flex-start", md: "center" }}
+        >
           <Link href="/" _hover={{ textDecoration: "none", color: "gray.200" }}>
             Home
           </Link>
@@ -33,10 +45,15 @@ const Header = () => {
             About
           </Link>
 
-          {/*What we Do */}
+          {/* What we Do Dropdown */}
           <MenuRoot>
             <MenuTrigger>
-              <Button size="sm" variant="outline" _hover={{ bg: "gray.100" }}>
+              <Button
+                size="sm"
+                variant="outline"
+                _hover={{ textDecoration: "none", color: "white.200" }}
+                display={{ base: "block", md: "inline-block" }} 
+              >
                 What We Do
               </Button>
             </MenuTrigger>
@@ -69,7 +86,7 @@ const Header = () => {
             </MenuContent>
           </MenuRoot>
 
-          {/* Dropdown Menu */}
+          {/* Other Menu Items */}
           <Link
             href="/team"
             _hover={{ textDecoration: "none", color: "gray.200" }}

@@ -1,6 +1,5 @@
 import { Box, Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import React from "react";
 
 const Renovation = () => {
   return (
@@ -8,7 +7,7 @@ const Renovation = () => {
       <Box
         position="relative"
         w="100%"
-        h={{ base: "60vh", md: "80vh" }} // Responsive height
+        h={{ base: "60vh", md: "80vh" }}
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -16,9 +15,8 @@ const Renovation = () => {
         bgImage="url('https://media.istockphoto.com/id/991867390/photo/that-thing-is-next-on-our-housing-plan.jpg?s=612x612&w=0&k=20&c=7emEOvQq5H6RQl-g1JV1FHXSg_k64ArCIRxdY1zZjBc=')"
         bgSize="cover"
         bgRepeat="no-repeat"
-        // position="center"
         mb={20}
-        backgroundColor="gray.200" // Fallback color
+        backgroundColor="gray.200"
       >
         {/* Motion Div for the Text */}
         <motion.div
@@ -103,8 +101,8 @@ const Renovation = () => {
         </Heading>
         <Box padding={{ base: "10px", md: "20px" }}>
           <Flex
-            direction={{ base: "column", md: "row" }} // Stack vertically on small screens, horizontally on larger screens
-            gap={6} // Gap between text and image
+            direction={{ base: "column", md: "row" }}
+            gap={6}
             justify="flex-start"
             mb={10}
           >
@@ -112,7 +110,7 @@ const Renovation = () => {
             <Box
               position="relative"
               overflow="hidden"
-              width={{ base: "100%", md: "500px" }} // Full width on smaller screens, fixed width on larger ones
+              width={{ base: "100%", md: "500px" }}
             >
               <Image
                 src="https://img.freepik.com/free-photo/young-couple-doing-apartment-repair-together-themselves-married-man-woman-doing-home-makeover-renovation_155003-26913.jpg?t=st=1736162208~exp=1736165808~hmac=579d4b7a2a0e01a0bc7fa4ed7fc8d50cbf1336b29ce0081b4e076a03c343956b&w=996"
@@ -125,7 +123,7 @@ const Renovation = () => {
             <Box
               flex="1"
               padding={{ base: "10px", md: "20px" }}
-              textAlign={{ base: "center", md: "left" }} // Center align text on small screens, left align on larger ones
+              textAlign={{ base: "center", md: "left" }}
             >
               <Heading
                 as="h3"
@@ -155,7 +153,7 @@ const Renovation = () => {
       {/* Commercial Renovations */}
       <Box padding={{ base: "10px", md: "20px" }}>
         <Flex
-          direction={{ base: "column", md: "row" }} // Stack vertically on small screens, horizontally on larger screens
+          direction={{ base: "column", md: "row" }}
           gap={6}
           justify="flex-start"
           mb={10}
@@ -192,7 +190,7 @@ const Renovation = () => {
           <Box
             position="relative"
             overflow="hidden"
-            width={{ base: "100%", md: "500px" }} // Full width on smaller screens, fixed width on larger ones
+            width={{ base: "100%", md: "500px" }}
           >
             <Image
               src="https://img.freepik.com/free-photo/full-shot-man-woman-standing-ladder_23-2149366705.jpg?t=st=1736162273~exp=1736165873~hmac=07f60bf293e8ae1809e784fcd0893c6c7480d092c97aeeb5ea5df4f64978a2c5&w=996"
@@ -207,7 +205,7 @@ const Renovation = () => {
       {/* Smart Home */}
       <Box padding={{ base: "10px", md: "20px" }}>
         <Flex
-          direction={{ base: "column", md: "row" }} // Stack vertically on small screens, horizontally on larger screens
+          direction={{ base: "column", md: "row" }}
           gap={6}
           justify="flex-start"
           mb={10}

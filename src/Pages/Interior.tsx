@@ -1,7 +1,6 @@
 import {
   Box,
   Center,
-  Flex,
   Grid,
   GridItem,
   Heading,
@@ -10,7 +9,6 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import React from "react";
 
 const Interior = () => {
   return (
@@ -18,7 +16,7 @@ const Interior = () => {
       <Box
         position="relative"
         w="100%"
-        h={{ base: "60vh", md: "80vh" }} // Responsive height
+        h={{ base: "60vh", md: "80vh" }}
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -26,9 +24,8 @@ const Interior = () => {
         bgImage="url('https://img.freepik.com/free-photo/living-room_1048-2485.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid')"
         bgSize="cover"
         bgRepeat="no-repeat"
-        // position="center"
         mb={20}
-        backgroundColor="gray.200" // Fallback color
+        backgroundColor="gray.200"
       >
         {/* Motion Div for the Text */}
         <motion.div
@@ -124,7 +121,7 @@ const Interior = () => {
                 h="100%"
                 transition="transform 0.3s ease-in-out"
                 _hover={{
-                  transform: "scale(1.05)", // Moderate zoom-in effect
+                  transform: "scale(1.05)",
                 }}
               />
             </Box>
@@ -140,7 +137,7 @@ const Interior = () => {
                 w="100%"
                 transition="transform 0.3s ease-in-out"
                 _hover={{
-                  transform: "scale(1.05)", // Moderate zoom-in effect
+                  transform: "scale(1.05)",
                 }}
               />
             </Box>
@@ -156,7 +153,7 @@ const Interior = () => {
                 w="100%"
                 transition="transform 0.3s ease-in-out"
                 _hover={{
-                  transform: "scale(1.05)", // Moderate zoom-in effect
+                  transform: "scale(1.05)",
                 }}
               />
             </Box>
@@ -172,7 +169,7 @@ const Interior = () => {
                 w="100%"
                 transition="transform 0.3s ease-in-out"
                 _hover={{
-                  transform: "scale(1.05)", // Moderate zoom-in effect
+                  transform: "scale(1.05)",
                 }}
               />
             </Box>
@@ -186,19 +183,23 @@ const Interior = () => {
           <Heading
             mb={6}
             textAlign="center"
-            fontSize="4xl"
+            fontSize={{ base: "3xl", md: "4xl" }}
             fontWeight="lighter"
           >
             Interior Themes
           </Heading>
-          <Grid templateColumns="repeat(3, 1fr)" gap={6} justifyItems="center">
+          <Grid
+            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
+            gap={6}
+            justifyItems="center"
+          >
             {/* First Row */}
             <Box p={5} borderWidth={1} borderRadius="md" boxShadow="sm">
               <Image
                 src="https://img.freepik.com/free-photo/bangkok-thailand-august-12-2016-beautiful-luxury-living-room_1203-2867.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid"
                 alt="Concept Design"
                 borderRadius="md"
-                height="250px" // Fixed height for consistency
+                height="250px"
                 objectFit="cover"
               />
               <Heading fontSize="xl" fontWeight="lighter" mt={4}>
@@ -240,7 +241,7 @@ const Interior = () => {
               <Text mt={2} fontWeight="lighter">
                 Traditional Interiors blend timeless elegance with classic
                 design elements, creating a warm, inviting space filled with
-                rich textures and detailed craftsmanship
+                rich textures and detailed craftsmanship.
               </Text>
             </Box>
           </Grid>
@@ -248,44 +249,44 @@ const Interior = () => {
       </Center>
 
       {/* Architecture Images */}
-                  <Box padding={{ base: "10px", md: "20px" }}>
-                    <SimpleGrid columns={{ base: 2, md: 4 }} padding={6}>
-                      {[
-                        "https://img.freepik.com/free-photo/3d-rendering-modern-dining-room-living-room-with-luxury-decor_105762-1932.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-photo/empty-flat-interrior-with-elements-decoration_1303-23909.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-design-chandelier_105762-2230.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-photo/3d-rendering-modern-luxury-hotel-office-reception-meeting-lounge_105762-2015.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-design-chandelier_105762-2226.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-photo/life-style_1122-1801.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-photo/3d-room-interior-with-classic-design-furniture_23-2150895587.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-photo/3d-room-interior-with-classic-design-furniture_23-2150895578.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-photo/interior-shot-modern-house-kitchen-with-large-windows_181624-24368.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-vector/apartment-living-room-open-office-lounge-area-interior-realistic-with-coffee-table-near-sofa-paintings-brick-wall-bookshelves-hanging-from-ceiling-vintage-lamps-illustration_1441-3447.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-photo/3d-contemporary-living-room-interior-modern-furniture_1048-9856.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                        "https://img.freepik.com/free-photo/spacious-room-with-big-window_1203-1490.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
-                      ].map((src, index) => (
-                        <Box
-                          key={index}
-                          overflow="hidden"
-                          position="relative"
-                          padding="5px"
-                          _hover={{
-                            boxShadow: "xl",
-                            transform: "scale(1.05)",
-                            transition: "transform 0.3s ease-in-out",
-                          }}
-                        >
-                          <Image
-                            src={src}
-                            alt={`Construction Image ${index + 1}`}
-                            width="100%"
-                            height="100%"
-                            objectFit="cover"
-                          />
-                        </Box>
-                      ))}
-                    </SimpleGrid>
-                  </Box>
+      <Box padding={{ base: "10px", md: "20px" }}>
+        <SimpleGrid columns={{ base: 2, md: 4 }} padding={6}>
+          {[
+            "https://img.freepik.com/free-photo/3d-rendering-modern-dining-room-living-room-with-luxury-decor_105762-1932.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/empty-flat-interrior-with-elements-decoration_1303-23909.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-design-chandelier_105762-2230.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-rendering-modern-luxury-hotel-office-reception-meeting-lounge_105762-2015.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-design-chandelier_105762-2226.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/life-style_1122-1801.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-room-interior-with-classic-design-furniture_23-2150895587.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-room-interior-with-classic-design-furniture_23-2150895578.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/interior-shot-modern-house-kitchen-with-large-windows_181624-24368.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-vector/apartment-living-room-open-office-lounge-area-interior-realistic-with-coffee-table-near-sofa-paintings-brick-wall-bookshelves-hanging-from-ceiling-vintage-lamps-illustration_1441-3447.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/3d-contemporary-living-room-interior-modern-furniture_1048-9856.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+            "https://img.freepik.com/free-photo/spacious-room-with-big-window_1203-1490.jpg?ga=GA1.1.1410370334.1734773987&semt=ais_hybrid",
+          ].map((src, index) => (
+            <Box
+              key={index}
+              overflow="hidden"
+              position="relative"
+              padding="5px"
+              _hover={{
+                boxShadow: "xl",
+                transform: "scale(1.05)",
+                transition: "transform 0.3s ease-in-out",
+              }}
+            >
+              <Image
+                src={src}
+                alt={`Construction Image ${index + 1}`}
+                width="100%"
+                height="100%"
+                objectFit="cover"
+              />
+            </Box>
+          ))}
+        </SimpleGrid>
+      </Box>
     </>
   );
 };

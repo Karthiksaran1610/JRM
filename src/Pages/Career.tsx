@@ -65,25 +65,6 @@ const Career = () => {
   });
 
   {
-    /*Training,Edu & Internship*/
-  }
-  const [applicationData, setApplicationData] = useState({
-    name: "",
-    email: "",
-    college: "",
-    degree: "",
-    resume: null,
-  });
-
-  const [formErrors, setFormErrors] = useState({
-    name: "",
-    email: "",
-    college: "",
-    degree: "",
-    resume: "",
-  });
-
-  {
     /*Hiring Now*/
   }
   const handleInputChange = (value: string, field: string) => {
@@ -237,6 +218,10 @@ const Career = () => {
         "Bachelor's degree in Computer Science or related field, proficiency in React.js.",
     },
   ];
+
+  {
+    /*Training Edu & Internship*/
+  }
 
   return (
     <>
