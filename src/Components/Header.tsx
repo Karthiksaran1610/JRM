@@ -88,6 +88,18 @@ const Header = () => {
 
           {/* Other Menu Items */}
           <Link
+            href="/price"
+            _hover={{ textDecoration: "none", color: "gray.200" }}
+          >
+            Price
+          </Link>
+          <Link
+            href="/portfolio"
+            _hover={{ textDecoration: "none", color: "gray.200" }}
+          >
+            Portfolio
+          </Link>
+          <Link
             href="/team"
             _hover={{ textDecoration: "none", color: "gray.200" }}
           >
