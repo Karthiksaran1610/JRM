@@ -100,6 +100,12 @@ const Header = () => {
             Portfolio
           </Link>
           <Link
+            href="/blog"
+            _hover={{ textDecoration: "none", color: "gray.200" }}
+          >
+            Blog
+          </Link>
+          <Link
             href="/team"
             _hover={{ textDecoration: "none", color: "gray.200" }}
           >
