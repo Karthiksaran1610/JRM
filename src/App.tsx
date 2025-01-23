@@ -14,7 +14,9 @@ import Architecture from "./Pages/Architecture";
 import { Toaster } from "./Components/ui/toaster";
 import Price from "./Pages/Price";
 import Portfolio from "./Pages/Portfolio";
-import { Blog } from "./Pages/Blog";
+import Blog from "./Pages/Blog";
+
+
 
 const App = () => {
   return (
@@ -27,7 +29,7 @@ const App = () => {
         <Route path="/whatwedo" element={<WhatWedo />} />
         <Route path="/price" element={<Price/>} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog" element={<Blog/>} />
         <Route path="/team" element={<Team />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
