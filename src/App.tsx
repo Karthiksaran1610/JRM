@@ -15,6 +15,15 @@ import { Toaster } from "./Components/ui/toaster";
 import Price from "./Pages/Price";
 import Portfolio from "./Pages/Portfolio";
 import Blog from "./Pages/Blog";
+import Blog1 from "./Pages/Blog1";
+import Blog2 from "./Pages/Blog2";
+import Blog3 from "./Pages/Blog3";
+import Blog4 from "./Pages/Blog4";
+import Blog5 from "./Pages/Blog5";
+import Blog6 from "./Pages/Blog6";
+import Blog7 from "./Pages/Blog7";
+import Blog8 from "./Pages/Blog8";
+import Blog9 from "./Pages/Blog9";
 
 
 
@@ -30,6 +39,15 @@ const App = () => {
         <Route path="/price" element={<Price/>} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog/>} />
+        <Route path="/blog1" element={<Blog1/>} />
+        <Route path="/blog2" element={<Blog2/>} />
+        <Route path="/blog3" element={<Blog3/>} />
+        <Route path="/blog4" element={<Blog4/>} />
+        <Route path="/blog5" element={<Blog5/>} />
+        <Route path="/blog6" element={<Blog6/>} />
+        <Route path="/blog7" element={<Blog7/>} />
+        <Route path="/blog8" element={<Blog8/>} />
+        <Route path="/blog9" element={<Blog9/>} />
         <Route path="/team" element={<Team />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
