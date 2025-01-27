@@ -95,63 +95,70 @@ const Blog = () => {
   ];
   return (
     <>
-      <Box p="8">
-        <Box mb="8" fontSize="4xl" textAlign="center">
-          Latest Blogs
-        </Box>
-        <Grid
-          templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
-          gap="6"
-          alignItems="stretch"
+  <Box p="8">
+    <Box mb="8" fontSize="4xl" textAlign="center">
+      Latest Blogs
+    </Box>
+    <Grid
+      templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
+      gap="6"
+      alignItems="stretch"
+    >
+      {blogData.map((blog, index) => (
+        <Link
+          key={index}
+          href={blog.link} // Navigate to the blog page
+          _hover={{ textDecoration: "none" }} // Remove underline on hover
         >
-          {blogData.map((blog, index) => (
-            <GridItem
-              key={index}
-              display="flex"
-              flexDirection="column"
-              p="4"
-              border="1px"
-              borderColor="gray.200"
-              borderRadius="md"
-              shadow="md"
+          <GridItem
+            display="flex"
+            flexDirection="column"
+            p="4"
+            border="1px"
+            borderColor="gray.200"
+            borderRadius="md"
+            shadow="md"
+            _hover={{ shadow: "lg", transform: "scale(1.02)" }} // Add hover effect
+            transition="all 0.2s ease-in-out"
+            h="100%" // Full height in the grid
+          >
+            {/* Image */}
+            <Image
+              src={blog.image}
+              alt={blog.title}
+              objectFit="cover"
+              w="100%"
+              h="200px"
+            />
+
+            {/* Vertical card content */}
+            <VStack
+              align="stretch"
+              p="3"
+              mt="4"
+              flex="1" // Fills the remaining space to ensure equal height
+              justifyContent="space-between" // Space out elements in the VStack
             >
-              {/* Image */}
-              <Image
-                src={blog.image}
-                alt={blog.title}
-                objectFit="cover"
-                w="100%"
-                h="200px"
-              />
+              <Text fontSize="lg" fontWeight="bold" color="gray.800">
+                {blog.title}
+              </Text>
 
-              {/* Vertical card content */}
-              <VStack align="stretch" p="3" mt="4">
-                <Text fontSize="lg" fontWeight="bold" color="gray.800">
-                  {blog.title}
-                </Text>
+              <Text fontSize="sm" color="gray.600">
+                {blog.description}
+              </Text>
 
-                <Text fontSize="sm" color="gray.600">
-                  {blog.description}
-                </Text>
-
-                <Link href={blog.link} color="cyan.600">
-                  Learn More
-                </Link>
-              </VStack>
-
-              <Text
-                fontSize="sm"
-                color="gray.500"
-                mt="4"
-                alignSelf="flex-start"
-              >
+              <Text fontSize="sm" color="gray.500" alignSelf="flex-start">
                 {blog.date}
               </Text>
-            </GridItem>
-          ))}
-        </Grid>
-      </Box>
-    </>
+            </VStack>
+          </GridItem>
+        </Link>
+      ))}
+    </Grid>
+  </Box>
+</>
+
+
   );
 };
 

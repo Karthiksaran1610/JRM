@@ -44,44 +44,58 @@ const Blog8 = () => {
   ];
   return (
     <>
-      <Box p="8">
-        <Flex flexDirection="column" align="center" gap="4" justify="center">
+      <Box p={{ base: "4", md: "8" }}>
+        <Flex
+          flexDirection="column"
+          align="center"
+          gap={{ base: "4", md: "6" }}
+          justify="center"
+        >
           {/* Title */}
-          <Heading as="h2" size="3xl" textAlign="center">
-            Vastu Plants for Wealth and Prosperity
+          <Heading 
+            as="h2" 
+            size={{ base: "xl", md: "3xl" }} 
+            textAlign="center"
+          >
+            Best Location for a Sump Tank as Per Vastu
           </Heading>
 
           {/* Description */}
           <Text
-            fontSize="md"
+            fontSize={{ base: "sm", md: "md" }}
             lineHeight="1.8"
             textAlign="center"
             whiteSpace="pre-wrap"
             color="gray.500"
           >
-            Learn how Vastu plants like tulsi, money plant, and bamboo can bring
-            wealth and prosperity.{"\n"}Discover expert tips on placement from
-            JRM Construction Blog.
+            Learn where to place a sump tank as per Vastu guidelines. Discover
+            tips for aligning water storage {"\n"} with Vastu principles from
+            JRM Construction.
           </Text>
 
           {/* Image */}
-          <Box flex="1" width="100%" mt={8}>
+          <Box flex="1" width="100%" mt={{ base: 6, md: 8 }}>
             <Image
-              src="https://images.unsplash.com/photo-1467384520991-15001a740e87?auto=format&fit=crop&w=984&h=417"
-              alt="Custom Home Design"
+              src="https://images.unsplash.com/photo-1527766833261-b09c3163a791?auto=format&fit=crop&w=984&h=417"
+              alt="Sump Tank"
               borderRadius="md"
               width="100%"
               height="auto"
-              mb={15}
+              mb={{ base: 8, md: 15 }}
             />
           </Box>
         </Flex>
       </Box>
 
-      {/*Section Box*/}
-
-      <Box p="8">
-        <Flex flexDirection="column" gap="8" mt="8" ml="40" mr="40">
+      {/* Section Box */}
+      <Box p={{ base: "4", md: "8" }}>
+        <Flex
+          flexDirection="column"
+          gap={{ base: "6", md: "8" }}
+          mt={{ base: "6", md: "8" }}
+          ml={{ base: "4", md: "40" }}
+          mr={{ base: "4", md: "40" }}
+        >
           {sections.map((section, index) => (
             <MotionBox
               key={index}
@@ -90,7 +104,7 @@ const Blog8 = () => {
               transition={{ duration: 0.8, delay: index * 0.9 }}
             >
               <Heading
-                fontSize={{ base: "2xl", md: "3xl" }} // Adjust for responsive design
+                fontSize={{ base: "xl", md: "3xl" }} 
                 textAlign="center"
                 mb="4"
               >
@@ -99,7 +113,7 @@ const Blog8 = () => {
               <Text
                 fontSize={{ base: "sm", lg: "md" }}
                 lineHeight="1.8"
-                textAlign="justify" // Justify ensures neat text alignment
+                textAlign="justify" 
                 whiteSpace="pre-wrap"
                 color="gray.700"
               >
