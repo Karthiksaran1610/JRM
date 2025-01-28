@@ -1,7 +1,59 @@
-import { Box, Heading, Text, Flex, Image } from "@chakra-ui/react";
+import { Avatar } from "@/Components/ui/avatar";
+import { Rating } from "@/Components/ui/rating";
+import { Box, Heading, Text, Flex, Image, Grid, Stack } from "@chakra-ui/react";
 import CountUp from "react-countup";
 
 const About = () => {
+  const testimonials = [
+    {
+      name: "Ashma Fathima",
+
+      text: "Their expertise and guidance throught the process made the entire journey seamless and stress free. JRM Construction team communication was outstanding, keeping me informed every steps.",
+      avatar:
+        "https://lh3.googleusercontent.com/a-/ALV-UjWgO-wfiqdxOncog1ocItokVKFcSXrgQQuTUvv9jaP0gFVu4iWT=w75-h75-p-rp-mo-br100",
+      rating: 5,
+    },
+    {
+      name: "muruga nantham",
+
+      text: "I constructed my villa with JRM Construction and my dream house has came out very well. I thank JRM team.",
+      avatar:
+        "https://lh3.googleusercontent.com/a/ACg8ocJpAuuAoCR0OgQcsVKw4Z3DJSmQgGY1zMbUj9YYsWrbaDKtEg=w75-h75-p-rp-mo-br100",
+      rating: 4.5,
+    },
+    {
+      name: "Sreenath V",
+
+      text: "The attention to detail and quality of materials used are exceptional. We're so grateful to have chosen JRM Construction for our project.",
+      avatar:
+        "https://lh3.googleusercontent.com/a-/ALV-UjUkGWA9bwaC6h7ruhA5OECxhijEFkpsL6vT7R-jb73N1zySTj0d=w75-h75-p-rp-mo-br100",
+      rating: 5,
+    },
+    {
+      name: "Swedha Jayaraman",
+
+      text: "We've never seen a construction company so dedicated to customer satisfaction.We  recommend JRM Construction stonly for your House construction. JRM Construction truly goes above and beyond!",
+      avatar:
+        "https://lh3.googleusercontent.com/a-/ALV-UjWynyhNaeftWbAgjgCYp6zImQ7mTFdIXF2qHX6bZe2oUSDBk0kh=w75-h75-p-rp-mo-br100",
+      rating: 5,
+    },
+    {
+      name: "Xena Dev",
+
+      text: "JRM construction are highly qualified and extremely easy to communicate with about any aspect of the project. My farm house in ECR has been constructed by JRM. I had different ideas and concerns. They listened to all and gave an solution for everything. Now I don't have to sacrifice anything and move on as I dreamt.",
+      avatar:
+        "https://lh3.googleusercontent.com/a/ACg8ocLj21QbUF3TdKSfN4qgB0muLoT33JYKPNnqsF-Xm8u4IwMJzA=w75-h75-p-rp-mo-br100",
+      rating: 5,
+    },
+    {
+      name: "Rashmi Dhal",
+
+      text: "We've never seen a construction company so dedicated to customer satisfaction.We  recommend JRM Construction stonly for your House construction. JRM Construction truly goes above and beyond!",
+      avatar:
+        "https://lh3.googleusercontent.com/a-/ALV-UjWze43RZCWEGdmwaXXbB9mOP01ENceCfgsRXYAqQPlgFCp_Pg-4=w75-h75-p-rp-mo-br100",
+      rating: 5,
+    },
+  ];
   return (
     <>
       <Box
@@ -282,6 +334,55 @@ const About = () => {
             </Box>
           </Flex>
         </Box>
+      </Box>
+
+      {/*Testimonials */}
+
+      <Box>
+        <Stack maxW="1200px" mx="auto" py={8} p={8}>
+          {/* Heading */}
+          <Heading
+            as="h2"
+            size="4xl"
+            fontWeight="lighter"
+            textAlign="center"
+            mb={4}
+          >
+            Client Testimonials
+          </Heading>
+
+          {/* Testimonial Grid */}
+          <Grid templateColumns="repeat(3, 1fr)" gap={8}>
+            {testimonials.map(({ name, text, avatar, rating }, index) => (
+              <Box
+                key={index}
+                w="360px"
+                p="6"
+                borderWidth="1px"
+                borderRadius="lg"
+                boxShadow="lg"
+                display="flex"
+                flexDirection="column"
+              >
+                <Stack direction="row" align="center" mb={4}>
+                  <Avatar name={name} src={avatar} />
+                  <Stack p={0} pl={2}>
+                    <Text fontWeight="medium">{name}</Text>
+                  </Stack>
+                </Stack>
+
+                <Rating
+                  colorPalette="orange"
+                  readOnly
+                  size="sm"
+                  defaultValue={rating}
+                />
+
+                <Text mt={4}>{text}</Text>
+              </Box>
+            ))}
+          </Grid>
+        </Stack>
       </Box>
     </>
   );

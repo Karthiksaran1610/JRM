@@ -67,7 +67,7 @@ const Construction = () => {
           <Text
             fontWeight="light"
             fontSize={{ base: "md", md: "lg" }}
-            whiteSpace="pre-wrap"
+            whiteSpace="pre-wrap" 
             mb={4}
             color="gray.500"
           >
