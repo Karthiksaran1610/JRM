@@ -15,14 +15,13 @@ import {
   Text,
 } from "@chakra-ui/react";
 
+interface CardProps {
+  imageSrc: string;
+  title: string;
+  description: string;
+  link: string;
+}
 const Home = () => {
-  interface CardProps {
-    imageSrc: string;
-    title: string;
-    description: string;
-    link: string;
-  }
-
   const Card: React.FC<CardProps> = ({
     imageSrc,
     title,

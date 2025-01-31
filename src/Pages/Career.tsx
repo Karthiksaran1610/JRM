@@ -273,7 +273,7 @@ const Career = () => {
           boxShadow="lg"
           p={4}
         >
-          <AccordionRoot collapsible defaultValue={["frontend"]}>
+          <AccordionRoot collapsible >
             {items.map((item) => (
               <AccordionItem key={item.value} value={item.value}>
                 <AccordionItemTrigger>{item.title}</AccordionItemTrigger>

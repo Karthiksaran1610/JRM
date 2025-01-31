@@ -112,6 +112,12 @@ const Header = () => {
             Team
           </Link>
           <Link
+            href="/calculator"
+            _hover={{ textDecoration: "none", color: "gray.200" }}
+          >
+            Calculator
+          </Link>
+          <Link
             href="/career"
             _hover={{ textDecoration: "none", color: "gray.200" }}
           >

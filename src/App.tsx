@@ -3,7 +3,7 @@ import Footer from "./Components/Footer";
 import About from "./Pages/About";
 import Team from "./Pages/Team";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
+
 import Contact from "./Pages/Contact";
 import WhatWedo from "./Pages/WhatWedo";
 import Career from "./Pages/Career";
@@ -24,6 +24,9 @@ import Blog6 from "./Pages/Blog6";
 import Blog7 from "./Pages/Blog7";
 import Blog8 from "./Pages/Blog8";
 import Blog9 from "./Pages/Blog9";
+import Home from "./Pages/Home";
+import Calculator from "./Pages/Calculator";
+
 
 
 
@@ -49,6 +52,7 @@ const App = () => {
         <Route path="/blog8" element={<Blog8/>} />
         <Route path="/blog9" element={<Blog9/>} />
         <Route path="/team" element={<Team />} />
+        <Route path="/calculator" element={<Calculator />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/construction" element={<Construction />} />

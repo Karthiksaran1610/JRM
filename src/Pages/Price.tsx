@@ -106,7 +106,7 @@ const Price = () => {
               <Heading
                 size={{ base: "xl", md: "2xl", lg: "3xl" }}
                 mb={4}
-                bgColor="teal.200"
+                bgColor="yellow.400"
                 p={{ base: 2, md: 4 }}
                 borderRadius="md"
                 color="white"
@@ -126,7 +126,7 @@ const Price = () => {
 
               <Box
                 height="2px"
-                backgroundColor="teal.200"
+                backgroundColor="yellow.400"
                 my={4}
                 width="80%"
                 mx="auto"
