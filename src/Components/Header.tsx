@@ -118,6 +118,12 @@ const Header = () => {
             Calculator
           </Link>
           <Link
+            href="/offer"
+            _hover={{ textDecoration: "none", color: "gray.200" }}
+          >
+            Offer
+          </Link>
+          <Link
             href="/career"
             _hover={{ textDecoration: "none", color: "gray.200" }}
           >
