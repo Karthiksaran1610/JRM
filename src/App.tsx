@@ -27,6 +27,7 @@ import Blog9 from "./Pages/Blog9";
 import Home from "./Pages/Home";
 import Calculator from "./Pages/Calculator";
 import Offer from "./Pages/Offer";
+import Chatbot from "./Pages/Chatbot";
 
 
 
@@ -54,6 +55,7 @@ const App = () => {
         <Route path="/blog9" element={<Blog9/>} />
         <Route path="/team" element={<Team />} />
         <Route path="/calculator" element={<Calculator />} />
+        <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/offer" element={<Offer />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
@@ -62,7 +64,7 @@ const App = () => {
         <Route path="/architecture" element={<Architecture />} />
         <Route path="/interior" element={<Interior />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 };

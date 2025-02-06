@@ -118,6 +118,12 @@ const Header = () => {
             Calculator
           </Link>
           <Link
+            href="/chatbot"
+            _hover={{ textDecoration: "none", color: "gray.200" }}
+          >
+            Chatbot
+          </Link>
+          <Link
             href="/offer"
             _hover={{ textDecoration: "none", color: "gray.200" }}
           >
